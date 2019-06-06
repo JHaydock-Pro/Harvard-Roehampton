@@ -18,5 +18,5 @@ Citations modified:
 *Other citations may work perfectly but have not been tested*
 
 ### Notes and Compromises
-- Currently using multiple authors for citation results in a comma appearing after the last author, this is proving difficult to resolve*
+- Currently using multiple authors for citation results in a comma appearing after the last author, this is proving difficult to resolve
 - For book editions, the default `ed.` is used rather than the Roehampton `edn.`
