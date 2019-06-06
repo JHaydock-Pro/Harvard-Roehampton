@@ -5259,9 +5259,11 @@
 		</xsl:variable>
 		<xsl:choose>
 			<xsl:when test ="$cEdition!=0">
+				<xsl:call-template name ="templ_prop_OpenBracket"/>
 				<xsl:value-of select="b:Edition"/>
 				<xsl:call-template name ="templ_prop_Space"/>
 				<xsl:call-template name ="templ_str_EditorShortUnCap"/>
+				<xsl:call-template name ="templ_prop_CloseBracket"/>
 				<xsl:call-template name ="templ_prop_Space"/>
 			</xsl:when>
 		</xsl:choose>
