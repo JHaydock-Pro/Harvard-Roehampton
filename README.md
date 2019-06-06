@@ -1,5 +1,5 @@
 # Harvard-Roehampton
-Drop this into `C:\Users\&lt;USERNAME>\AppData\Roaming\Microsoft\Bibliography\Style` and Word 2016 should be able to use it as a references style. Select `Havard - Roehampton (JH)` from the references->style dropdown.
+Drop this into `C:\Users\<USERNAME>\AppData\Roaming\Microsoft\Bibliography\Style` and Word 2016 should be able to use it as a references style. Select `Havard - Roehampton (JH)` from the references->style dropdown.
 
 Based on: https://libguides.roehampton.ac.uk/ld.php?content_id=32122510
 
