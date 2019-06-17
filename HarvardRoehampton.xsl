@@ -4410,12 +4410,13 @@
 									<xsl:call-template name ="templ_prop_BeforeLastAuthor"/>
 									<xsl:call-template name ="templ_prop_Space"/>
 								</xsl:when>
-								<xsl:when test ="$cAuthorMiddleName=0">
+								<xsl:when test ="$cAuthorMiddleName=0 and $cAuthors>position()">
 									<xsl:call-template name ="templ_prop_ListSeparator"/>
-								</xsl:when>
-								<xsl:when test ="$cAuthorMiddleName!=0">
 									<xsl:call-template name ="templ_prop_Space"/>
 								</xsl:when>
+								<xsl:otherwise>
+								  <xsl:call-template name ="templ_prop_Space"/>
+								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:when>
 					</xsl:choose>
@@ -4449,8 +4450,11 @@
 									<xsl:call-template name ="templ_prop_BeforeLastAuthor"/>
 									<xsl:call-template name ="templ_prop_Space"/>
 								</xsl:when>
-								<xsl:otherwise>
+								<xsl:when test ="$cAuthors>position()">
 									<xsl:call-template name ="templ_prop_ListSeparator"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:call-template name ="templ_prop_Space"/>
 								</xsl:otherwise>
 							</xsl:choose>
 						</xsl:when>
@@ -4527,7 +4531,8 @@
 							</xsl:when>
 						</xsl:choose>
 						<xsl:call-template name ="templ_str_AndOthersUnCap"/>
-						<xsl:call-template name ="templ_prop_ListSeparator"/>
+						<!-- <xsl:call-template name ="templ_prop_ListSeparator"/> -->
+						<xsl:call-template name ="templ_prop_Space"/>
 					</xsl:if>
 				</xsl:for-each>
 			</xsl:otherwise>
