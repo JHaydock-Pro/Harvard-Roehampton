@@ -5042,7 +5042,7 @@
 			<xsl:value-of select="b:JournalName"/>
 			<xsl:choose>
 				<xsl:when test="$cMonth!=0 or $cPages!=0 or $cVolume!=0 or $cIssue!=0">
-					<xsl:call-template name ="templ_prop_ListSeparator"/>
+					<xsl:call-template name ="templ_prop_Dot"/>
 					<xsl:call-template name ="templ_prop_Space"/>
 				</xsl:when>
 				<xsl:otherwise>
