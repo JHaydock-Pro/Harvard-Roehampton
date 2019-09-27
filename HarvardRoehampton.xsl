@@ -4871,7 +4871,7 @@
 				</xsl:choose>
 				<xsl:choose>
 					<xsl:when test="$cPages!=0">
-						<xsl:call-template name ="templ_prop_ListSeparator"/>
+						<xsl:call-template name ="templ_prop_Space"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:call-template name = "templ_prop_Dot"/>
@@ -4885,7 +4885,7 @@
 					<xsl:value-of select="b:Issue"/>
 					<xsl:choose>
 						<xsl:when test="$cPages!=0">
-							<xsl:call-template name ="templ_prop_ListSeparator"/>
+							<xsl:call-template name ="templ_prop_Space"/>
 						</xsl:when>
 						<xsl:otherwise>
 							<xsl:call-template name = "templ_prop_Dot"/>
